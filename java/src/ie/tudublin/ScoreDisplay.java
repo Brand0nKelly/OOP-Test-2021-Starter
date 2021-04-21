@@ -69,7 +69,9 @@ public class ScoreDisplay extends PApplet
 	public void draw()
 	{
 		background(255);
+		
 		staveLines();
+		drawNotes();
 		
 	}
 
@@ -84,8 +86,8 @@ public class ScoreDisplay extends PApplet
 		{
 			float y = map(i, -5, 5, border, height - border);
 		
-
-		stroke(0, 0, 0);
+			
+	
 		line(border, y, width - border, y);
 		}
 
@@ -93,5 +95,80 @@ public class ScoreDisplay extends PApplet
 
 	void drawNotes()
 	{
+		int i = 0;
+		for(Note N: notes)
+		{
+			char z = N.getNote();
+			if(z == 'D')
+			{
+				if(mouseX > (108+i*26)-9 && mouseX < (110+i*26)+9)
+				{
+					fill(255,0,0);
+				}
+				else
+				{
+					fill(0);
+				}
+				
+				circle(108+i*26, 290, 15);
+				line(115, 290, 115, 237);
+			}
+			if(z == 'D')
+			{
+				fill(0);
+				circle(108+i*26, 290, 15);
+				line(115, 290, 115, 237);
+			}
+
+			if(z == 'E')
+			{
+				fill(0);
+				circle(108+i*26, 290, 15);
+				line(115, 290, 115, 237);
+			}
+
+			if(z == 'F')
+			{
+				fill(0);
+				circle(108+i*26, 290, 15);
+				line(115, 290, 115, 237);
+			}
+
+			if(z == 'G')
+			{
+				fill(0);
+				circle(108+i*26, 290, 15);
+				line(115, 290, 115, 237);
+			}
+
+			if(z == 'A')
+			{
+				fill(0);
+				circle(108+i*26, 290, 15);
+				line(115, 290, 115, 237);
+			}
+
+			if(z == 'B')
+			{
+				fill(0);
+				circle(108+i*26, 290, 15);
+				line(115, 290, 115, 237);
+			}
+
+			if(z == 'c')
+			{
+				fill(0);
+				circle(108+i*26, 290, 15);
+				line(115, 290, 115, 237);
+			}
+
+			if(z == 'd')
+			{
+				fill(0);
+				circle(108+i*26, 290, 15);
+				line(115, 290, 115, 237);
+			}
+			i++;
+		}
 	}
 }
