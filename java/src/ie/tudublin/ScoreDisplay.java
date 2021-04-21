@@ -36,7 +36,26 @@ public class ScoreDisplay extends PApplet
 	public void draw()
 	{
 		background(255);
+		staveLines();
 		
+	}
+
+	public void staveLines()
+	{
+		
+		
+		float border = 0.1f * width;
+	
+
+		for( int i =0; i < 5; i++)
+		{
+			float y = map(i, -5, 5, border, height - border);
+		
+
+		stroke(0, 0, 0);
+		line(border, y, width - border, y);
+		}
+
 	}
 
 	void drawNotes()
