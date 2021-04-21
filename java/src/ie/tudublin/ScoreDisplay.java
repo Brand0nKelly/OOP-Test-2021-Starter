@@ -101,7 +101,7 @@ public class ScoreDisplay extends PApplet
 			char z = N.getNote();
 			if(z == 'D')
 			{
-				if(mouseX > (108+i*26)-9 && mouseX < (110+i*26)+9)
+				if(mouseX > (108+i*26)-5 && mouseX < (108+i*26)+5)
 				{
 					fill(255,0,0);
 				}
