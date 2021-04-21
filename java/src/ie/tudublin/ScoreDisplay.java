@@ -2,7 +2,6 @@ package ie.tudublin;
 
 import java.util.ArrayList;
 
-
 import processing.core.PApplet;
 
 public class ScoreDisplay extends PApplet
@@ -24,6 +23,10 @@ public class ScoreDisplay extends PApplet
 		int i = c - '0'; // i holds the number 7 (55 - 48) 
 		println(i);
 	}
+
+	
+
+
 
 	public void setup() 
 	{
